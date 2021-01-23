@@ -24,10 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Setup Python 3.8
+      - name: Setup Python 3.7
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: 3.7
       - name: Install dependencies
         run: make install
       - name: Lint with pylint
@@ -38,7 +38,6 @@ jobs:
       #  run: make hello
 
       # Runs a set of commands using the runners shell
-     # - name: Run test from Makefile
-      #  run: |
-         # echo Build test
-          #make test
+      - name: Run test from Makefile
+        run: make hello
+        
