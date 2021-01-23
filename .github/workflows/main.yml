@@ -35,8 +35,7 @@ jobs:
       - name: Test with pytest
         run: make test
       # Runs a single command using the runners shell
-      - name: Run hello from Makefile
-        run: make hello
+      #  run: make hello
 
       # Runs a set of commands using the runners shell
      # - name: Run test from Makefile
