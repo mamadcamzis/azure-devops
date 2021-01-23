@@ -1,5 +1,5 @@
 hello:
-	echo "This my first make command"
+	python hello.py
 install:
 	pip install --upgrade pip &&\
 	pip install -r requirements.txt
