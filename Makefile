@@ -1,5 +1,5 @@
 hello:
-	python hello.py
+	"Hello from Makefile"
 install:
 	pip install --upgrade pip &&\
 	pip install -r requirements.txt
